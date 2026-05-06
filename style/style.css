@@ -1,3 +1,7 @@
+/* =========================================================
+   1. GLOBAL / RESET STYLES
+   ========================================================= */
+
 /* Reset small spacing issues */
 * {
     box-sizing: border-box;
@@ -15,20 +19,26 @@ main {
     min-height: 60vh;
 }
 
+/* Sticky header */
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Navbar */
+
+/* =========================================================
+   2. NAVBAR (HEADER SECTION)
+   ========================================================= */
+
+/* Navbar background */
 .navbar {
     background: linear-gradient(135deg, #6f9f73, #9fc088);
     border-bottom: 3px solid #f0d8a8;
     box-shadow: 0 4px 14px rgba(47, 58, 47, 0.16);
 }
 
-/* Container */
+/* Navbar container (layout) */
 .nav-container {
     display: flex;
     align-items: center;
@@ -40,7 +50,11 @@ header {
     padding: 10px 24px;
 }
 
-/* Logo */
+
+/* =========================================================
+   3. LOGO (LEFT SIDE)
+   ========================================================= */
+
 .logo {
     display: flex;
     align-items: center;
@@ -55,7 +69,11 @@ header {
     padding-top: 13px;
 }
 
-/* Menu */
+
+/* =========================================================
+   4. NAVIGATION MENU (CENTER LINKS)
+   ========================================================= */
+
 .menu {
     list-style: none;
     display: flex;
@@ -66,7 +84,7 @@ header {
     padding: 0;
 }
 
-/* Links */
+/* Navigation links */
 .menu a {
     display: block;
     text-decoration: none;
@@ -74,10 +92,12 @@ header {
     font-weight: 600;
     padding: 10px 14px;
     border-radius: 999px;
-    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    transition: background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
 }
 
-/* Hover */
+/* Hover + focus effect */
 .menu a:hover,
 .menu a:focus-visible {
     background-color: rgba(255, 247, 230, 0.24);
@@ -86,20 +106,25 @@ header {
     transform: translateY(-1px);
 }
 
-/* Active */
+/* Active page */
 .menu a.active {
     background-color: #3d5a40;
     color: #fff7e6;
 }
 
-/* Hide checkbox */
+
+/* =========================================================
+   5. HAMBURGER MENU (NO JS)
+   ========================================================= */
+
+/* Hidden checkbox toggle */
 #menu-toggle {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-/* Hamburger icon */
+/* Hamburger button */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -115,6 +140,7 @@ header {
     transition: background-color 0.25s ease;
 }
 
+/* Hamburger lines */
 .menu-icon span {
     width: 23px;
     height: 3px;
@@ -124,15 +150,21 @@ header {
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* Responsive */
+
+/* =========================================================
+   6. RESPONSIVE DESIGN (TABLET & MOBILE)
+   ========================================================= */
+
 @media (max-width: 900px) {
 
+    /* Navbar layout adjustment */
     .nav-container {
         justify-content: space-between;
         min-height: 56px;
         padding: 4px 18px;
     }
 
+    /* Logo positioning */
     .logo {
         position: absolute;
         left: 18px;
@@ -153,6 +185,7 @@ header {
         margin-left: auto;
     }
 
+    /* Accessibility focus */
     #menu-toggle:focus-visible+.menu-icon {
         outline: 3px solid #fff7e6;
         outline-offset: 3px;
@@ -165,23 +198,33 @@ header {
         left: 18px;
         right: 18px;
         width: calc(100% - 36px);
+
         max-height: 0;
         overflow: hidden;
+
         flex-direction: column;
         align-items: stretch;
         gap: 4px;
+
         background-color: rgba(77, 116, 82, 0.98);
         border: 0 solid #f0d8a8;
         border-radius: 0 0 18px 18px;
+
         box-shadow: 0 12px 24px rgba(47, 58, 47, 0.22);
+
         transform: translateY(-8px);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: max-height 0.3s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.25s ease, visibility 0.25s ease;
+
+        transition: max-height 0.3s ease,
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            padding 0.25s ease,
+            visibility 0.25s ease;
     }
 
-    /* Show menu when checked */
+    /* Show menu when checkbox is checked */
     #menu-toggle:checked+.menu-icon+.menu {
         max-height: 480px;
         padding: 12px;
@@ -192,6 +235,7 @@ header {
         transform: translateY(0);
     }
 
+    /* Animate hamburger → X */
     #menu-toggle:checked+.menu-icon {
         background-color: rgba(61, 90, 64, 0.38);
     }
@@ -208,7 +252,7 @@ header {
         transform: translateY(-9px) rotate(-45deg);
     }
 
-    /* Links full width */
+    /* Full-width links */
     .menu a {
         width: 100%;
         text-align: center;
@@ -217,7 +261,10 @@ header {
     }
 }
 
+
+/* Small mobile screens */
 @media (max-width: 480px) {
+
     .nav-container {
         min-height: 50px;
         padding: 3px 14px;
@@ -238,7 +285,11 @@ header {
     }
 }
 
-/* Footer */
+
+/* =========================================================
+   7. FOOTER SECTION
+   ========================================================= */
+
 .site-footer {
     margin-top: 56px;
     background: linear-gradient(135deg, #3d5a40, #6f9f73);
@@ -246,6 +297,7 @@ header {
     color: #fff7e6;
 }
 
+/* Footer layout */
 .footer-container {
     display: flex;
     align-items: center;
@@ -256,6 +308,7 @@ header {
     padding: 32px 24px;
 }
 
+/* Brand area */
 .footer-brand {
     display: flex;
     align-items: center;
@@ -275,6 +328,7 @@ header {
     line-height: 1.6;
 }
 
+/* Footer links */
 .footer-links {
     display: flex;
     flex-wrap: wrap;
@@ -288,7 +342,8 @@ header {
     font-weight: 600;
     padding: 8px 12px;
     border-radius: 999px;
-    transition: background-color 0.25s ease, transform 0.25s ease;
+    transition: background-color 0.25s ease,
+        transform 0.25s ease;
 }
 
 .footer-links a:hover,
@@ -298,6 +353,7 @@ header {
     transform: translateY(-1px);
 }
 
+/* Bottom footer */
 .footer-bottom {
     border-top: 1px solid rgba(255, 247, 230, 0.22);
     padding: 14px 24px;
@@ -306,7 +362,13 @@ header {
     color: rgba(255, 247, 230, 0.86);
 }
 
+
+/* =========================================================
+   8. FOOTER RESPONSIVE
+   ========================================================= */
+
 @media (max-width: 760px) {
+
     .footer-container {
         flex-direction: column;
         align-items: center;

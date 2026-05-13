@@ -1012,6 +1012,17 @@ header {
         padding: 104px 14px 72px;
     }
 
+    /* Better framing of characters on portrait screens */
+    .hero-slide {
+        object-position: center 30%;
+    }
+
+    /* Lighter overlay — text is centered on mobile, no need for heavy left gradient */
+    .hero-overlay {
+        background:
+            linear-gradient(180deg, rgba(22, 34, 24, 0.35) 0%, rgba(28, 41, 28, 0.42) 40%, rgba(22, 34, 24, 0.30) 100%);
+    }
+
     .hero-content {
         text-align: center;
         padding-bottom: 0;
@@ -1108,6 +1119,12 @@ header {
     .hero {
         min-height: auto;
         padding-top: 138px;
+    }
+
+    /* Lighter overlay for centered-text layout */
+    .hero-overlay {
+        background:
+            linear-gradient(180deg, rgba(22, 34, 24, 0.30) 0%, rgba(28, 41, 28, 0.40) 40%, rgba(22, 34, 24, 0.25) 100%);
     }
 
     .hero-content {

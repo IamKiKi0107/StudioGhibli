@@ -7,6 +7,9 @@
     <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
     <title>Studio Ghibli - Home</title>
     <link rel="stylesheet" href="style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -44,9 +47,155 @@
         </nav>
     </header>
 
+    <!-- ════════════════════════════════
+         MAIN CONTENT
+    ════════════════════════════════ -->
     <main>
-        <h1>This is home page</h1>
-        <img src="assets/images/logo.png" alt="" width="1500px">
+
+        <!-- ── HERO BANNER ── -->
+        <section class="hero" aria-label="Hero banner">
+            <div class="hero-image-wrap" aria-hidden="true">
+                <img class="hero-slide" src="assets/images/hero-collage/Ghibli-hero-collage-1.jpg"
+                    alt="Studio Ghibli collage featuring iconic scenes">
+                <img class="hero-slide" src="assets/images/hero-collage/Ghibli-hero-collage-2.jpg"
+                    alt="Studio Ghibli collage featuring beloved characters">
+                <img class="hero-slide" src="assets/images/hero-collage/Ghibli-hero-collage-3.jpg"
+                    alt="Studio Ghibli collage featuring magical landscapes">
+                <img class="hero-slide" src="assets/images/hero-collage/Ghibli-hero-collage-4.jpg"
+                    alt="Studio Ghibli collage featuring expressive moments">
+                <img class="hero-slide" src="assets/images/hero-collage/Ghibli-hero-collage-5.jpg"
+                    alt="Studio Ghibli collage featuring fantasy worlds">
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="hero-eyebrow">A fan tribute</p>
+                <h1 class="hero-title">Welcome to<br>Ghibli World</h1>
+                <p class="hero-subtitle">
+                    Where every frame tells a story — explore the magic of Studio Ghibli's films,
+                    beloved characters, enchanting soundtracks, and timeless legacy.
+                </p>
+                <div class="hero-actions">
+                    <a href="movies.html" class="hero-cta">Explore the Films</a>
+                    <a href="characters.html" class="hero-link">Meet the Characters</a>
+                </div>
+            </div>
+
+            <div class="hero-facts" aria-label="Studio Ghibli highlights">
+                <article class="hero-fact">
+                    <span class="hero-fact-value">1985</span>
+                    <span class="hero-fact-label">Studio founded</span>
+                </article>
+                <article class="hero-fact">
+                    <span class="hero-fact-value">24</span>
+                    <span class="hero-fact-label">Feature films to explore</span>
+                </article>
+                <article class="hero-fact">
+                    <span class="hero-fact-value">5s</span>
+                    <span class="hero-fact-label">Rotating collage moments</span>
+                </article>
+            </div>
+
+            <div class="hero-dots" aria-hidden="true">
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+            </div>
+        </section>
+
+
+        <!-- ── INTRODUCTION ── -->
+        <section class="intro-section" aria-label="Introduction">
+            <span class="section-label">About Ghibli World</span>
+            <h2>Discover the Universe of Studio Ghibli</h2>
+            <p>
+                Studio Ghibli has enchanted audiences worldwide since 1985, crafting animated worlds of breathtaking
+                beauty and profound emotion. From the windswept landscapes of <em>Nausicaä</em> to the spirit-filled
+                bathhouses of <em>Spirited Away</em>, every Ghibli film is a masterpiece of imagination.
+            </p>
+            <p>
+                This site is your guide to the films, the unforgettable characters, the sweeping soundtracks
+                by Joe Hisaishi, the prestigious awards, and heartfelt community reviews that celebrate
+                this extraordinary studio's work.
+            </p>
+        </section>
+
+
+        <!-- ── DECORATIVE DIVIDER ── -->
+        <div class="divider" aria-hidden="true">
+            <div class="divider-line"></div>
+            <span class="divider-icon">✦</span>
+            <div class="divider-line"></div>
+        </div>
+
+
+        <!-- ── QUICK LINKS CARDS ── -->
+        <section class="quicklinks-section" aria-label="Site sections">
+            <span class="section-label">Browse the collection</span>
+            <h3>Explore Ghibli World</h3>
+            <div class="cards-grid">
+
+                <a href="movies.html" class="card">
+                    <span class="card-icon">🎬</span>
+                    <span class="card-label">Movies</span>
+                    <span class="card-desc">Browse every Ghibli film and its story</span>
+                </a>
+
+                <a href="characters.html" class="card">
+                    <span class="card-icon">🌟</span>
+                    <span class="card-label">Characters</span>
+                    <span class="card-desc">Meet the heroes, spirits & companions</span>
+                </a>
+
+                <a href="soundtracks.html" class="card">
+                    <span class="card-icon">🎵</span>
+                    <span class="card-label">Soundtracks</span>
+                    <span class="card-desc">Joe Hisaishi's magical scores</span>
+                </a>
+
+                <a href="awards.html" class="card">
+                    <span class="card-icon">🏆</span>
+                    <span class="card-label">Awards</span>
+                    <span class="card-desc">Accolades & global recognition</span>
+                </a>
+
+                <a href="reviews.html" class="card">
+                    <span class="card-icon">📖</span>
+                    <span class="card-label">Reviews</span>
+                    <span class="card-desc">Community thoughts & reflections</span>
+                </a>
+
+                <a href="feedback.html" class="card">
+                    <span class="card-icon">💌</span>
+                    <span class="card-label">Feedback</span>
+                    <span class="card-desc">Share your Ghibli memories</span>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ── NOTICE BOXES ── -->
+        <section class="notice-section" aria-label="Site information">
+            <div class="notice-box url">
+                <span class="notice-label">Published URL</span>
+                <a href="https://iamkiki0107.github.io/StudioGhibli/" target="_blank" rel="noopener">
+                    https://iamkiki0107.github.io/StudioGhibli/
+                </a>
+            </div>
+
+            <div class="notice-box disclaimer">
+                <span class="notice-label">Disclaimer</span>
+                <strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is
+                an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation
+                (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
+            </div>
+
+        </section>
+
     </main>
 
     <footer class="site-footer">
@@ -68,7 +217,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Studio Ghibli Fan Site. Made for learning and appreciation.</p>
+            <p>&copy; <a href="about.html">PowerPuff_Girls</a> | Last updated: 13 May 2026</p>
         </div>
     </footer>
 </body>

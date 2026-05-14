@@ -1,8 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
+    initMobileMenuDismiss();
     initBackToTop();
     initHeroSlideshow();
     centerFilmographyScroll();
 });
+
+function initMobileMenuDismiss() {
+    var menuToggle = document.querySelector('#menu-toggle');
+    var navContainer = document.querySelector('.nav-container');
+
+    if (!menuToggle || !navContainer) {
+        return;
+    }
+
+    document.addEventListener('click', function (event) {
+        if (!menuToggle.checked || navContainer.contains(event.target)) {
+            return;
+        }
+
+        menuToggle.checked = false;
+    });
+}
 
 function initBackToTop() {
     var backToTopButton = document.querySelector('.back-to-top');

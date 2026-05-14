@@ -6,55 +6,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
     <title>Studio Ghibli - Reviews</title>
+
     <link rel="stylesheet" href="style/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
 
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/logo/pngwing.com.png" alt="Studio Ghibli Logo">
-                    </a>
-                </div>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
 
-                <!-- Hamburger toggle -->
-                <input type="checkbox" id="menu-toggle" aria-label="Open navigation menu">
-                <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-
-                <!-- Menu -->
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="movies.html">Movies</a></li>
-                    <li><a href="characters.html">Characters</a></li>
-                    <li><a href="soundtracks.html">Soundtracks</a></li>
-                    <li><a href="awards.html">Awards</a></li>
-                    <li><a href="reviews.html" class="active">Reviews</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
-
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo/pngwing.com.png" alt="Studio Ghibli Logo">
+                </a>
             </div>
-        </nav>
-    </header>
 
-    <main>
-        <h1>This is reviews page</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span><span></span><span></span>
+            </label>
 
-    </main>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="soundtracks.html">Soundtracks</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
 
-    <a href="#top" class="back-to-top" aria-label="Back to top">&#8593;</a>
+        </div>
+    </nav>
+</header>
 
-    <footer class="site-footer">
+<main class="reviews-page">
+
+    <section class="page-title">
+    <div class="title-card">
+        <h2>Ghibli Reviews & Watch Guide</h2>
+        <p>Stories, reflections, and a guided path through the Studio Ghibli universe.</p>
+    </div>
+</section>
+
+    <!-- FEATURED REVIEW -->
+    <section class="featured-review">
+        <div class="featured-card">
+            <img class="featured-img" src="assets/images/reviews-page/spirited-featured.jpg" alt="Spirited Away scene">
+            <h2>⭐ Featured Review</h2>
+            <h3>Spirited Away</h3>
+            <p class="quote">
+                “A world that breathes like memory itself—beautiful, eerie, and endlessly rewatchable.”
+            </p>
+            <div class="meta">
+                <span>Rating: ★★★★★</span>
+                <span>Genre: Fantasy</span>
+                <span>Runtime: 125 min</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- REVIEWS GRID -->
+    <section class="reviews-grid">
+
+        <div class="review-card cozy">
+            <h3>My Neighbor Totoro</h3>
+            <div class="stars">★★★★★</div>
+            <p>A warm childhood universe that feels like soft rain and sunlight at once.</p>
+            <span class="tag">Cozy</span>
+
+            <a class="watch-link" href="https://www.studioghibli.com.au/myneighbortotoro/" target="_blank">
+
+        ▶ Movie Info
+
+    </a>
+        </div>
+
+        <div class="review-card fantasy">
+            <h3>Howl's Moving Castle</h3>
+            <div class="stars">★★★★★</div>
+            <p>Magic, war, and identity tangled into something visually alive.</p>
+            <span class="tag">Fantasy</span>
+
+            <a class="watch-link" href="https://www.studioghibli.com.au/howlsmovingcastle/" target="_blank">
+
+        ▶ Movie Info
+
+    </a>
+        </div>
+
+        <div class="review-card emotional">
+            <h3>Grave of the Fireflies</h3>
+            <div class="stars">★★★★★</div>
+            <p>Devastation told with quiet beauty that refuses to let go.</p>
+            <span class="tag">Emotional</span>
+
+            <a class="watch-link" href="https://www.netflix.com/my-en/title/557010" target="_blank">
+
+        ▶ Movie Info
+
+    </a>
+
+        </div>
+
+        <div class="review-card adventure">
+            <h3>Princess Mononoke</h3>
+            <div class="stars">★★★★★</div>
+            <p>Nature vs humanity—no villains, just consequences.</p>
+            <span class="tag">Adventure</span>
+            <a class="watch-link" href="https://gkids.com/films/princess-mononoke/" target="_blank">
+
+        ▶ Movie Info
+
+    </a>
+        </div>
+
+    </section>
+
+    <!-- RATING BREAKDOWN -->
+    <section class="rating-breakdown">
+        <h2>Community Rating Breakdown</h2>
+
+        <div class="bar">
+            <span>★★★★★</span>
+            <div class="line"><div style="width: 90%"></div></div>
+        </div>
+
+        <div class="bar">
+            <span>★★★★☆</span>
+            <div class="line"><div style="width: 70%"></div></div>
+        </div>
+
+        <div class="bar">
+            <span>★★★☆☆</span>
+            <div class="line"><div style="width: 40%"></div></div>
+        </div>
+
+    </section>
+
+    <!-- WATCH ORDER -->
+    <section class="watch-order">
+    <h2 class="section-title">A Guided Watch Journey</h2>
+
+    <div class="watch-path">
+
+        <div class="watch-step">
+            <span class="step-number">01</span>
+            <div class="step-content">
+                <h3>My Neighbor Totoro</h3>
+                <p>Start soft — pure childhood wonder and comfort.</p>
+            </div>
+        </div>
+
+        <div class="watch-step">
+            <span class="step-number">02</span>
+            <div class="step-content">
+                <h3>Kiki’s Delivery Service</h3>
+                <p>Growth, independence, and gentle self-discovery.</p>
+            </div>
+        </div>
+
+        <div class="watch-step">
+            <span class="step-number">03</span>
+            <div class="step-content">
+                <h3>Spirited Away</h3>
+                <p>Enter the deeper spirit world — beauty with tension.</p>
+            </div>
+        </div>
+
+        <div class="watch-step">
+            <span class="step-number">04</span>
+            <div class="step-content">
+                <h3>Howl’s Moving Castle</h3>
+                <p>Magic, identity, and emotional chaos wrapped in wonder.</p>
+            </div>
+        </div>
+
+        <div class="watch-step">
+            <span class="step-number">05</span>
+            <div class="step-content">
+                <h3>Princess Mononoke</h3>
+                <p>End with conflict, nature, and moral weight.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section class="internal-link">
+        <a href="movies.html" class="explore-btn"> → Explore full movie universe</a>
+    </section>
+
+</main>
+
+<a href="#top" class="back-to-top">↑</a>
+
+<footer class="site-footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <img src="assets/logo/pngwing.com.png" alt="Studio Ghibli Logo">

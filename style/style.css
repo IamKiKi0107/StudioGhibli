@@ -2589,3 +2589,362 @@ header {
     outline: 3px solid #f0d8a8;
     outline-offset: 3px;
 }
+
+/* =========================================================
+   FEEDBACK PAGE
+   ========================================================= */
+
+.feedback-page {
+    padding: 20px 24px 80px;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+   ========================================================= */
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px 30px;
+}
+
+.title-card {
+    width: min(920px, 92%);
+
+    text-align: center;
+
+    padding: 34px 28px;
+
+    background: rgba(255, 247, 230, 0.78);
+
+    border: 1px solid rgba(240, 216, 168, 0.85);
+    border-radius: 24px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 12px 30px rgba(47, 58, 47, 0.12);
+
+    position: relative;
+    overflow: hidden;
+
+    transform: translateY(-20px);
+}
+
+.title-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(111, 159, 115, 0.18),
+            transparent 55%);
+
+    pointer-events: none;
+}
+
+.title-card h2 {
+    position: relative;
+
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+
+    color: #3d5a40;
+
+    margin-bottom: 12px;
+}
+
+.title-card p {
+    position: relative;
+
+    max-width: 60ch;
+    margin: 0 auto;
+
+    color: rgba(47, 58, 47, 0.76);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEEDBACK CONTAINER
+   ========================================================= */
+
+.feedback-wrapper {
+    padding: 10px 0 40px;
+}
+
+.feedback-container {
+    width: min(1000px, 95%);
+    margin: auto;
+
+    background:
+        rgba(255, 247, 230, 0.72);
+
+    border:
+        1px solid rgba(240, 216, 168, 0.9);
+
+    border-radius: 28px;
+
+    padding: 40px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 14px 36px rgba(47, 58, 47, 0.10);
+}
+
+
+/* =========================================================
+   FEEDBACK HEADING
+   ========================================================= */
+
+.feedback-heading {
+    text-align: center;
+
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
+
+    color: #3d5a40;
+
+    margin-bottom: 36px;
+}
+
+
+/* =========================================================
+   FIELDSETS
+   ========================================================= */
+
+fieldset {
+    border:
+        1px solid rgba(111, 159, 115, 0.28);
+
+    border-radius: 22px;
+
+    padding: 24px;
+    margin-bottom: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.35);
+}
+
+legend {
+    padding: 0 12px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+
+    color: #3d5a40;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   TABLE LAYOUT
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 14px 10px;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 30%;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+label {
+    color: #3d5a40;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FORM INPUTS
+   ========================================================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border-radius: 14px;
+
+    border:
+        1px solid rgba(111, 159, 115, 0.22);
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    font-family: 'Lora', serif;
+    font-size: 0.96rem;
+
+    color: #2f3a2f;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #6f9f73;
+
+    box-shadow:
+        0 0 0 4px rgba(111, 159, 115, 0.12);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RADIO + CHECKBOX GROUPS
+   ========================================================= */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 14px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 247, 230, 0.7);
+
+    border:
+        1px solid rgba(111, 159, 115, 0.18);
+
+    font-weight: 500;
+}
+
+.radio-group input,
+.checkbox-group input {
+    width: auto;
+    margin: 0;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.submit-wrap {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    padding: 15px 34px;
+
+    border-radius: 999px;
+
+    border:
+        1px solid rgba(240, 216, 168, 0.8);
+
+    background:
+        linear-gradient(135deg,
+            #3d5a40,
+            #6f9f73);
+
+    color: #fff7e6;
+
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 24px rgba(47, 58, 47, 0.16);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+
+    background:
+        linear-gradient(135deg,
+            #2f4631,
+            #5c875f);
+
+    box-shadow:
+        0 14px 32px rgba(47, 58, 47, 0.22);
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .feedback-container {
+        padding: 24px;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0;
+    }
+
+    td:first-child {
+        width: 100%;
+        padding-bottom: 6px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        gap: 10px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

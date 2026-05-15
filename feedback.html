@@ -47,9 +47,234 @@
         </nav>
     </header>
 
-    <main>
-        <h1>This is feedback page</h1>
-    </main>
+   <main class="feedback-page">
+
+    <!-- PAGE TITLE -->
+    <section class="page-title">
+        <div class="title-card">
+            <h2>Share Your Feedback</h2>
+            <p>
+                Tell us about your experience exploring the Studio Ghibli universe.
+                Your thoughts help us improve the journey for every visitor.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FEEDBACK FORM -->
+    <section class="feedback-wrapper">
+
+        <div class="feedback-container">
+
+            <h2 class="feedback-heading">Visitor Feedback Form</h2>
+
+            <form class="feedback-form">
+
+                <!-- PERSONAL INFORMATION -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <table>
+
+                        <tr>
+                            <td>
+                                <label for="fullname">Full Name</label>
+                            </td>
+
+                            <td>
+                                <input type="text"
+                                    id="fullname"
+                                    name="fullname"
+                                    placeholder="Enter your full name"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email">Email Address</label>
+                            </td>
+
+                            <td>
+                                <input type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="visit-date">Date of Visit</label>
+                            </td>
+
+                            <td>
+                                <input type="date"
+                                    id="visit-date"
+                                    name="visit-date">
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+
+                <!-- WEBSITE FEEDBACK -->
+                <fieldset>
+                    <legend>Your Feedback</legend>
+
+                    <table>
+
+                        <tr>
+                            <td>
+                                <label for="movie">Favourite Movie</label>
+                            </td>
+
+                            <td>
+                                <select id="movie" name="movie">
+
+                                    <option value="">
+                                        Select a movie
+                                    </option>
+
+                                    <option>
+                                        Spirited Away
+                                    </option>
+
+                                    <option>
+                                        My Neighbor Totoro
+                                    </option>
+
+                                    <option>
+                                        Princess Mononoke
+                                    </option>
+
+                                    <option>
+                                        Howl's Moving Castle
+                                    </option>
+
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <label>
+                                    Movie Rating
+                                </label>
+                            </td>
+
+                            <td class="radio-group">
+
+                                <label>
+                                    <input type="radio"
+                                        name="rating">
+                                    ★☆☆☆☆
+                                </label>
+
+                                <label>
+                                    <input type="radio"
+                                        name="rating">
+                                    ★★☆☆☆
+                                </label>
+
+                                <label>
+                                    <input type="radio"
+                                        name="rating">
+                                    ★★★☆☆
+                                </label>
+
+                                <label>
+                                    <input type="radio"
+                                        name="rating">
+                                    ★★★★☆
+                                </label>
+
+                                <label>
+                                    <input type="radio"
+                                        name="rating">
+                                    ★★★★★
+                                </label>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <label>
+                                    What did you enjoy?
+                                </label>
+                            </td>
+
+                            <td class="checkbox-group">
+
+                                <label>
+                                    <input type="checkbox">
+                                    Story
+                                </label>
+
+                                <label>
+                                    <input type="checkbox">
+                                    Art Style
+                                </label>
+
+                                <label>
+                                    <input type="checkbox">
+                                    Music
+                                </label>
+
+                                <label>
+                                    <input type="checkbox">
+                                    Characters
+                                </label>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <label for="comments">
+                                    Additional Comments
+                                </label>
+                            </td>
+
+                            <td>
+                                <textarea id="comments"
+                                    name="comments"
+                                    rows="6"
+                                    placeholder="Share your thoughts about your movie experience..."></textarea>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+
+                <!-- BUTTON -->
+                <div class="submit-wrap">
+
+                    <button type="submit"
+                        class="submit-btn">
+
+                        Submit Feedback
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
 
     <a href="#top" class="back-to-top" aria-label="Back to top">&#8593;</a>
 
